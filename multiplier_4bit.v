@@ -77,7 +77,7 @@ wire [6:0] s3_a;
 wire [6:0] s3_b;
 
 assign s3_a = { Z33, s2_fa3_sum , s2_fa2_sum , s2_fa1_sum , s2_ha1_sum , Z10 , Z00 };
-assign s3_b = { s2_fa3_Cout , s2_fa2_Cout , s2_fa1_Cout , s2_fa1_Cout , Z02 , Z01 , 1'b0 };
+assign s3_b = { s2_fa3_Cout , s2_fa2_Cout , s2_fa1_Cout , s2_ha1_Cout, Z02 , Z01 , 1'b0 };
 
 
 assign out = s3_a + s3_b ;
